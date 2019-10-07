@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color = "danger">
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class = "ion-padding">
+  <img class="icon" src="assets/icon/logo_lifeplus.png" alt="">
+    <ion-item>
+        <ion-label position ="floating">Inserte su correo electrónico</ion-label>
+        <ion-input type = "text" [(ngModel)]="email" name = "email" ></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label position ="floating">Inserte su constraseña</ion-label>
+          <ion-input type = "password" [(ngModel)]="password" name = "password" ></ion-input>
+        </ion-item>
+        <br>
+        <ion-button (click)="tryRegister()" expand ="block" color ="danger">Registrarme </ion-button>
+          <label class="error-message">{{errorMessage}}</label>
+          <label class="success-message">{{successMessage}}</label>
+          
+      <ion-button expand="block" (click)="goLogin()">Volver a Iniciar sesion </ion-button>
