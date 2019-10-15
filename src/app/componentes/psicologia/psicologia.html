@@ -1,0 +1,149 @@
+<ion-header>
+    <ion-toolbar color="medium">
+      <ion-button ion-button expand = "small" type="submit"  color="primary" (click)="back()">Volver </ion-button>
+      <br>
+      <ion-title>Nueva</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+      <ion-item>  
+          <ion-label position="floating"> Rut </ion-label>
+          <ion-input type="text"[(ngModel)]="psicologia.rut" > </ion-input>
+        </ion-item>
+
+        <ion-item>  
+            <ion-label position="floating"> Nombres </ion-label>
+            <ion-input type="text"[(ngModel)]="psicologia.nombres" > </ion-input>
+          </ion-item>
+          
+          <ion-item>  
+              <ion-label position="floating"> Paterno </ion-label>
+              <ion-input type="text"[(ngModel)]="psicologia.paterno" > </ion-input>
+            </ion-item>
+
+            <ion-item>  
+                <ion-label position="floating"> Materno </ion-label>
+                <ion-input type="text"[(ngModel)]="psicologia.materno" > </ion-input>
+              </ion-item>
+
+          <ion-item>
+              <ion-label position="floating"> sf_fechaa_ing </ion-label>
+              <ion-datetime [(ngModel)]="psicologia.sf_fechaa_ing " display-format="YYYY,DD,MM" ></ion-datetime>
+            </ion-item>  
+      
+            <ion-item>
+                <ion-label position="floating"> sf_fechaa_egr </ion-label>
+                <ion-datetime [(ngModel)]="psicologia.sf_fechaa_egr " display-format="YYYY,DD,MM" ></ion-datetime>
+              </ion-item> 
+            
+              <ion-item>  
+                  <ion-label position="floating"> sf_funcion_ing </ion-label>
+                  <ion-input type="text"[(ngModel)]="psicologia.sf_funcion_ing" > </ion-input>
+                </ion-item>
+
+            <ion-item>  
+                 <ion-label position="floating"> sf_rol_ing </ion-label>
+                <ion-input type="text"[(ngModel)]="psicologia.sf_rol_ing" > </ion-input>
+            </ion-item>
+
+            <ion-item>  
+                <ion-label position="floating"> sf_dolor_ing </ion-label>
+               <ion-input type="text"[(ngModel)]="psicologia.sf_dolor_ing" > </ion-input>
+           </ion-item>
+
+           <ion-item>  
+              <ion-label position="floating"> sf_salid_egr  </ion-label>
+             <ion-input type="text"[(ngModel)]="psicologia.sf_salid_egr " > </ion-input>
+         </ion-item>
+
+         <ion-item>  
+            <ion-label position="floating"> sf_vital_ing  </ion-label>
+           <ion-input type="text"[(ngModel)]="psicologia.sf_vital_ing " > </ion-input>
+       </ion-item>
+
+       <ion-item>  
+          <ion-label position="floating"> sf_vital_egr  </ion-label>
+         <ion-input type="text"[(ngModel)]="psicologia.sf_vital_egr " > </ion-input>
+     </ion-item>
+
+     <ion-item>  
+        <ion-label position="floating"> sf_funcionsoc_egr  </ion-label>
+       <ion-input type="text"[(ngModel)]="psicologia.sf_funcionsoc_egr " > </ion-input>
+   </ion-item>
+
+   <ion-item>  
+        <ion-label position="floating"> sf_rolemo_ing   </ion-label>
+       <ion-input type="text"[(ngModel)]="psicologia.sf_rolemo_ing  " > </ion-input>
+   </ion-item>
+
+   <ion-item>  
+      <ion-label position="floating"> sf_rolemo_egr   </ion-label>
+     <ion-input type="text"[(ngModel)]="psicologia.sf_rolemo_egr  " > </ion-input>
+ </ion-item>
+
+ <ion-item>  
+    <ion-label position="floating"> sf_saludmen_ing   </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.sf_saludmen_ing  " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> sf_salidmen_egr   </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.sf_salidmen_egr  " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_ansie_ing    </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_ansie_ing  " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_ansie_egr    </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_ansie_egr  " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_depre_ing    </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_depre_ing   " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_depre_egr    </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_depre_egr   " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_suba_ing    </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_suba_ing   " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_suba_egr     </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_suba_egr    " > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_subd_ing </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_subd_ing" > </ion-input>
+</ion-item>
+
+<ion-item>  
+    <ion-label position="floating"> had_subd_egr </ion-label>
+   <ion-input type="text"[(ngModel)]="psicologia.had_subd_egr" > </ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label position="floating"> created_at </ion-label>
+    <ion-datetime [(ngModel)]="psicologia.created_at " display-format="YYYY,DD,MM" ></ion-datetime>
+  </ion-item>  
+
+  <ion-item>
+      <ion-label position="floating"> update_at </ion-label>
+      <ion-datetime [(ngModel)]="psicologia.update_at " display-format="YYYY,DD,MM" ></ion-datetime>
+    </ion-item>  
+
+    <label class="error-message">{{errorMessage}}</label>
+    <label class="success-message">{{successMessage}}</label>
+    <br>
+    <ion-button (click)="goAgregarpsicologia()">Enviar</ion-button>
+  </ion-content>

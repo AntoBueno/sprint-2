@@ -1,0 +1,117 @@
+<ion-header>
+    <ion-toolbar color="medium">
+      <ion-button ion-button expand = "small" type="submit"  color="primary" (click)="back()">Volver </ion-button>
+      <br>
+      <ion-title>Nueva Ficha Médica</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-item>Ficha Médica</ion-item>
+  <ion-content class="ion-padding">
+
+      <ion-item>  
+          <ion-label position="floating"> Id </ion-label>
+          <ion-input type="text"[(ngModel)]="datosmedicos.id" > </ion-input>
+        </ion-item>
+
+        <ion-item>  
+            <ion-label position="floating"> Rut </ion-label>
+            <ion-input type="text"[(ngModel)]="datosmedicos.rut" > </ion-input>
+          </ion-item>
+
+          <ion-item>  
+              <ion-label position="floating"> Nombre </ion-label>
+              <ion-input type="text"[(ngModel)]="datosmedicos.nombres" > </ion-input>
+            </ion-item>
+
+            <ion-item>  
+                <ion-label position="floating"> Apellido paterno </ion-label>
+                <ion-input type="text"[(ngModel)]="datosmedicos.paterno" > </ion-input>
+              </ion-item>
+          
+              <ion-item>  
+                  <ion-label position="floating"> Apellido materno </ion-label>
+                  <ion-input type="text"[(ngModel)]="datosmedicos.materno" > </ion-input>
+                </ion-item>
+
+             <ion-item>  
+                    <ion-label position="floating"> Riesgo </ion-label>
+                    <ion-input type="text"[(ngModel)]="datosmedicos.riesgo" > </ion-input>
+              </ion-item>
+                  
+              <ion-item>  
+                  <ion-label position="floating"> ergo fecha ingreso </ion-label>
+                  <ion-datetime type="text"[(ngModel)]="datosmedicos.ergo_fecha_ing" display-format="YYYY,DD,MM" > </ion-datetime>
+              </ion-item>
+
+                <ion-item>  
+                     <ion-label position="floating"> ergo fecha egreso </ion-label>
+                    <ion-datetime type="text"[(ngModel)]="datosmedicos.ergo_fecha_egr" display-format="YYYY,DD,MM"  > </ion-datetime>
+                </ion-item>
+    
+                <ion-item>  
+                    <ion-label position="floating"> ergo vol ing </ion-label>
+                   <ion-input type="text"[(ngModel)]="datosmedicos.ergo_vol_ing" > </ion-input>
+               </ion-item>
+
+               <ion-item>  
+                  <ion-label position="floating"> ergo voml ing </ion-label>
+                 <ion-input type="text"[(ngModel)]="datosmedicos.ergo_voml_ing"> </ion-input>
+             </ion-item>
+                
+             <ion-item>  
+                <ion-label position="floating"> ergo voml egr </ion-label>
+               <ion-input type="text"[(ngModel)]="datosmedicos.ergo_voml_egr"> </ion-input>
+           </ion-item>
+              
+           <ion-item>  
+              <ion-label position="floating"> ergo fcmax egr </ion-label>
+             <ion-input type="text"[(ngModel)]="datosmedicos.ergo_fcmax_egr"> </ion-input>
+         </ion-item>
+            
+         <ion-item>  
+            <ion-label position="floating"> ergo pulso ing </ion-label>
+           <ion-input type="text"[(ngModel)]="datosmedicos.ergo_pulso_ing"> </ion-input>
+       </ion-item>
+
+       <ion-item>  
+          <ion-label position="floating"> ergo pulso egr </ion-label>
+         <ion-input type="text"[(ngModel)]="datosmedicos.ergo_pulso_egr"> </ion-input>
+     </ion-item> 
+       
+     <ion-item>  
+        <ion-label position="floating"> ergo ve ing </ion-label>
+       <ion-input type="text"[(ngModel)]="datosmedicos.ergo_ve_ing"> </ion-input>
+   </ion-item>     
+   
+   <ion-item>  
+      <ion-label position="floating"> ergo ve egr </ion-label>
+     <ion-input type="text"[(ngModel)]="datosmedicos.ergo_ve_egr"> </ion-input>
+ </ion-item>  
+
+ <ion-item>  
+    <ion-label position="floating"> ergo mets ing </ion-label>
+   <ion-input type="text"[(ngModel)]="datosmedicos.ergo_mets_ing"> </ion-input>
+</ion-item>  
+
+<ion-item>  
+    <ion-label position="floating"> ergo mets egr </ion-label>
+   <ion-input type="text"[(ngModel)]="datosmedicos.ergo_mets_egr"> </ion-input>
+</ion-item>  
+
+<ion-item>  
+    <ion-label position="floating"> ergo mets egr </ion-label>
+   <ion-input type="text"[(ngModel)]="datosmedicos.ergo_mets_egr"> </ion-input>
+</ion-item>  
+
+<ion-item>  
+    <ion-label position="floating"> created </ion-label>
+   <ion-datetime type="text"[(ngModel)]="datosmedicos.created_at" display-format="YYYY,DD,MM  :" > </ion-datetime>
+</ion-item>  
+
+<ion-item>  
+    <ion-label position="floating"> update </ion-label>
+   <ion-datetime [(ngModel)]="datosmedicos.update_at" display-format="YYYY,DD,MM  :" > </ion-datetime>
+</ion-item>  
+
+<ion-button (click)="goAgregarFicha()">Enviar</ion-button>
+</ion-content>

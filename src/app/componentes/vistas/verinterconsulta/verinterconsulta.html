@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Interconsultas</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+
+<ion-item *ngFor="let interconsulta of inter"  >
+  <ion-label>
+      <ion-grid>
+    <p> <strong > Nombre del médico: </strong> {{interconsulta.nombre_medico}} </p>
+    <p> <strong> Nombre del paciente: </strong> {{interconsulta.nombre_paciente}} </p>
+    <p> <strong> Rut del paciente: </strong> {{interconsulta.rut_paciente}} </p>
+    <p> <strong> Sexo: </strong> {{interconsulta.genero}} </p>
+    <p> <strong> Peso paciente: </strong> {{interconsulta.peso_paciente}} </p>
+    <p > <strong>Altura paciente: </strong > {{interconsulta.altura_paciente}} </p>
+    <p> <strong> Presión cardiaca: </strong> {{interconsulta.presion_cardiaca}} </p>
+    <p> <strong> Observaciones médicas: </strong> {{interconsulta.observaciones_medicas}} </p>
+    <p> <strong> Fecha de atención: </strong> {{interconsulta.fecha_atencion}} </p>
+    <ion-button color="danger" (click)="goEliminarinterconsulta(interconsulta.id)" >Borrar interconsulta</ion-button>
+    </ion-grid>
+  </ion-label>
+</ion-item>
+
+<ion-button ion-button expand = "small" type="submit"  color="secondary" (click)="back()">Volver </ion-button>
+</ion-content>

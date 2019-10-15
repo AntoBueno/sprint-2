@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar color="success">
+      <ion-title>Fichas medicas</ion-title> 
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class= "ion-padding" >
+<button ion-button (click) ="takePhoto()">Ver Radiografia</button>
+    <ion-list>
+    <ion-item *ngFor="let fichas of interconsulta"  >
+      <ion-label>
+  
+        <p> <strong> rut: </strong> {{fichas.rut}} </p>
+        <p> <strong> nombres: </strong> {{fichas.nombres}} </p>
+        <p> <strong> paterno: </strong> {{fichas.paterno}} </p>
+  
+        <p> <strong> materno: </strong> {{fichas.materno}} </p>
+        <p> <strong> riesgo: </strong> {{fichas.riesgo}} </p>
+        <p > <strong> ergo_fecha_ing: </strong > {{fichas.ergo_fecha_ing}} </p>
+        <p> <strong> ergo_fecha_egr: </strong> {{fichas.ergo_fecha_egr}} </p>
+        <p> <strong> ergo_vol_ing: </strong> {{fichas.ergo_vol_ing}} </p>
+        <p> <strong> ergo_voml_ing: </strong> {{fichas.ergo_voml_ing}} </p>
+        <p> <strong> ergo_voml_egr: </strong> {{fichas.ergo_voml_egr}} </p>
+        <p> <strong> ergo_fcmax_egr: </strong> {{fichas.ergo_fcmax_egr}} </p>
+  
+        <p> <strong> ergo_pulso_ing: </strong> {{fichas.ergo_pulso_ing}} </p>
+        <p> <strong> ergo_pulso_egr: </strong> {{fichas.ergo_pulso_egr}} </p>
+        <p> <strong> ergo_ve_ing: </strong> {{fichas.ergo_ve_ing}} </p>
+  
+        <p> <strong> ergo_ve_egr: </strong> {{fichas.ergo_ve_egr}} </p>
+        <p> <strong> ergo_mets_ing: </strong> {{fichas.ergo_mets_ing}} </p>
+        <p> <strong> ergo_mets_egr: </strong> {{fichas.ergo_mets_egr}} </p>
+         </ion-label>
+         <ion-button color="danger" (click)="goEliminarficha(fichas.id)" >Borrar ficha médica</ion-button>
+        </ion-item>
+    </ion-list>  
+  </ion-content>
+  <ion-button ion-button expand = "small" type="submit"  color="secondary" (click)="back()">Volver </ion-button>

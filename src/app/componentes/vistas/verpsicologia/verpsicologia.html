@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar color="medium">
+      <br>
+      <ion-title>Ficha psicologia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> 
+      <ion-item *ngFor="let psicologia of inter"  >
+      <ion-label>
+      <ion-list>
+       <p> <strong> rut paciente: </strong> {{psicologia.rut}} </p>
+      <p > <strong> sf_fechaa_ing:</strong > {{psicologia.sf_fechaa_ing}} </p>
+      <p >  <strong >sf_fechaa_egr: </strong> {{psicologia.sf_fechaa_egr}} </p>
+      <p> <strong> sf_funcion_ing: </strong> {{psicologia.sf_funcion_ing}} </p>
+      <p> <strong> sf_rol_ing: </strong> {{psicologia.sf_rol_ing}} </p>
+      <p> <strong> sf_dolor_ing: </strong> {{psicologia.sf_dolor_ing}} </p>
+      <p> <strong> sf_salid_egr: </strong> {{psicologia.sf_salid_egr}} </p>
+      <p> <strong> sf_vital_ing: </strong> {{psicologia.sf_vital_ing}} </p>
+      <p> <strong> sf_vital_egr: </strong> {{psicologia.sf_vital_egr}} </p>
+      <p> <strong> sf_funcionsoc_egr: </strong> {{psicologia.sf_funcionsoc_egr}} </p>
+      <p> <strong> sf_rolemo_ing: </strong> {{psicologia.sf_rolemo_ing}} </p>
+      <p> <strong> sf_rolemo_egr: </strong> {{psicologia.sf_rolemo_egr}} </p>
+      <p> <strong> sf_saludmen_ing: </strong> {{psicologia.sf_saludmen_ing}} </p>
+      
+      <p> <strong> sf_salidmen_egr: </strong> {{psicologia.sf_salidmen_egr}} </p>
+      <p> <strong> had_ansie_ing: </strong> {{psicologia.had_ansie_ing}} </p>
+      <p> <strong> had_ansie_egr: </strong> {{psicologia.had_ansie_egr}} </p>
+      <p> <strong> had_depre_ing: </strong> {{psicologia.had_depre_ing}} </p>
+      <p> <strong> had_depre_egr: </strong> {{psicologia.had_depre_egr}} </p>
+      <p> <strong> had_suba_ing: </strong> {{psicologia.had_suba_ing}} </p>
+      <p> <strong> had_suba_egr: </strong> {{psicologia.had_suba_egr}} </p>
+      <p> <strong> had_subd_ing: </strong> {{psicologia.had_subd_ing}} </p>
+      <p> <strong> had_subd_egr: </strong> {{psicologia.had_subd_egr}} </p>
+      </ion-list>
+      </ion-label>
+      </ion-item>
+      <ion-button ion-button expand = "small" type="submit"  color="secondary" (click)="goAgregar()">Agregar Datos </ion-button>  
+      <ion-button ion-button expand = "small" type="submit" color="danger" (click)="goEliminarpsicologia(psico.id)" >Borrar Dato</ion-button>
+      <ion-button ion-button expand = "small" type="submit"  color="secondary" (click)="back()">Volver </ion-button>
+      
+      </ion-content>

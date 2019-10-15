@@ -13,7 +13,8 @@ import {FormBuilder} from '@angular/forms';
   styleUrls: ['./register.scss'],
 })
 export class RegisterPage  {
-
+  nombre: string;
+  rut: string;
   email: string;
   password: string;
   errorMessage: string = '';
@@ -26,7 +27,7 @@ export class RegisterPage  {
   ) {}
 
   tryRegister(){
-    this.authService.doRegister(this.email, this.password)
+    this.authService.doRegister(this.nombre, this.rut, this.email, this.password)
      .then(res => {
        this.successMessage = "Se ha creado su cuenta exitosamente";
      }, err => {
@@ -35,7 +36,7 @@ export class RegisterPage  {
   }
 
   goLogin(){
-    console.log('estas en la funcion3');
+    console.log('estas en la funcion VOLVER A iniciar sesion');
     this.route.navigateByUrl("/login");
   }
   ngOnInit() {}

@@ -6,14 +6,14 @@ import { Config } from '@ionic/core';
 
 export const environment = {
   production: false,
-    apiKey: "AIzaSyDMBPd0Bw0JPZ_TudFSGCT3Q9bRmQEPYtw",
-    authDomain: "login-3a583.firebaseapp.com",
-    databaseURL: "https://login-3a583.firebaseio.com",
-    projectId: "login-3a583",
-    storageBucket: "",
-    messagingSenderId: "320889516169",
-    appId: "1:320889516169:web:1cd53882d7e785096f9658",
-    measurementId: "G-J513XR1N57"
+  apiKey: "AIzaSyDxzwLIX6U_bMGPGPBO04r5ExjpteInWMU",
+  authDomain: "laboratorio-36df6.firebaseapp.com",
+  databaseURL: "https://laboratorio-36df6.firebaseio.com",
+  projectId: "laboratorio-36df6",
+  storageBucket: "laboratorio-36df6.appspot.com",
+  messagingSenderId: "873076147726",
+  appId: "1:873076147726:web:3ed7b4bd7d254ca07f5e5f",
+  measurementId: "G-PCR7QN794F"
 };
 /*
  * For easier debugging in development mode, you can import the following file

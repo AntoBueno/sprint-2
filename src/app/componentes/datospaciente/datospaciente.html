@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color = "success">
+    <p>Bienvenido</p>
+    <ion-title>Datos Paciente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class = "ion-padding">
+  <img class="icon" src="assets/icon/logo_lifeplus.png" alt="">
+
+    <ion-button ion-button full class = "submit-button" type="submit" color = "success" (click)='goVerinter()' >Ver interconsulta</ion-button>
+    <ion-button ion-button full class = "submit-button" type="submit"  color ="success" (click)='goVerfi()'>Ver ficha medica</ion-button>
+    <ion-button ion-button full class = "submit-button" type="submit"  color ="success" (click)='goVerpsico()'>Psicologia</ion-button>
+    <ion-button expand = "block" color ="medium" (click)="goAgregarinter()" >Agregar interconsulta </ion-button>
+    <ion-button expand = "block" color ="medium"  (click)='goAgregarfi()'>Agregar ficha medica</ion-button>
+    
+    <br>
+    <ion-button ion-button full class ="submit-button" type="submit" color ="secondary" (click)='logout()'>Salir</ion-button>
+  </ion-content>    
+  
