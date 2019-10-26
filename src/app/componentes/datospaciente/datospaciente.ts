@@ -56,5 +56,10 @@ export class DatospacientePage  {
   goVerpsico(){
     this.route.navigateByUrl("/verpsicologia");
   }
+  goAgregar(){
+    this.route.navigateByUrl("/psicologia");
+  }
+  goUser(){
+    this.route.navigateByUrl("/user");
+  }
 }
-//(click)="goVerFicha()"  (click)="goAgregarFicha()"  (click)="goVerInterconsulta()"

@@ -9,22 +9,22 @@
 
   <ion-item>
     <ion-label position ="floating">Inserte su Nombre</ion-label>
-    <ion-input type = "text" [(ngModel)]="name" name = "nombre" ></ion-input>
+    <ion-input maxlength="15" type = "text" [(ngModel)]="name" name = "nombre" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position ="floating">Inserte su rut</ion-label>
-    <ion-input type = "text" [(ngModel)]="rut" name = "rut" ></ion-input>
+    <ion-input maxlength="10" type = "text" [(ngModel)]="rut" name = "rut" ></ion-input>
   </ion-item>
 
     <ion-item>
         <ion-label position ="floating">Inserte su correo electrónico</ion-label>
-        <ion-input type = "text" [(ngModel)]="email" name = "email" ></ion-input>
+        <ion-input maxlength="20" type = "text" [(ngModel)]="email" name = "email" ></ion-input>
       </ion-item>
       
         <ion-item>
           <ion-label position ="floating">Inserte su constraseña</ion-label>
-          <ion-input type = "password" [(ngModel)]="password" name = "password" ></ion-input>
+          <ion-input maxlength="10" type = "password" [(ngModel)]="password" name = "password" ></ion-input>
         </ion-item>
 
         <label class="error-message">{{errorMessage}}</label>

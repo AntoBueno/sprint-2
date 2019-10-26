@@ -23,7 +23,7 @@ export class PsicologiaPage implements OnInit {
     this.apiRest.doAgregarpsicologia(this.psicologia).subscribe(res => {
       console.log("llego hasta aqui")
       this.route.navigateByUrl("/verpsicologia");
-      alert('Se ha creado la ficha de psicologia exitosamente');
+      alert('Se ha creado la ficha de psicología exitosamente');
     }, err => {
      alert( "No se ha logrado registrar");
      

@@ -7,13 +7,15 @@ import {AngularFirestore} from '@angular/fire/firestore';
 import * as firebase from 'firebase/app';
 import { Storage } from '@ionic/storage';
 
+
+
 @Component({
   selector: 'app-verinterconsulta',
   templateUrl: './verinterconsulta.html',
   styleUrls: ['./verinterconsulta.scss'],
 })
 export class VerinterconsultaPage implements OnInit {
-  
+  public largo2: number
   public user: Object;
     public largo : Number;
     public nombre:string
@@ -50,7 +52,7 @@ this.storage.get('name').then((val)=>{
       console.log(this.nombre+" "+this.apellido+" "+" "+persona)
           
            this.apiServices.doVerinterconsulta().subscribe((fichas)=>{
-             this.user = fichas;
+             this.user = fichas;  
              this.largo = Object.keys(this.user).length;      
                    for( this.i = 0 ; this.i < this.largo ; this.i++  ){    
                      console.log( persona )             
@@ -65,7 +67,6 @@ this.storage.get('name').then((val)=>{
       })
   
   
-  
   }
 
    goEliminarinterconsulta(id_interconsulta:number){
@@ -78,6 +79,10 @@ this.storage.get('name').then((val)=>{
     })
   }
    
+  goAgregar(){
+    this.route.navigateByUrl("/interconsulta");
+   }
+
 back(){
   this.route.navigateByUrl("/datospaciente");
 }

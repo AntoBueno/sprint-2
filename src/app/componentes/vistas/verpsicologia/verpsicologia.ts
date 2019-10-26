@@ -21,6 +21,7 @@ export class VerpsicologiaPage implements OnInit {
   public i : number;
   public  inter = new Array();
   public psicologia: Object
+  public largo2 : Number
 
   constructor(  
     private apiServices : ApirestService,
@@ -61,8 +62,9 @@ this.storage.get('name').then((val)=>{
                }
            )
      })
-    })
 
+    })
+   
 
 
 }

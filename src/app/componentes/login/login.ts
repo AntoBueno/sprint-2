@@ -39,7 +39,7 @@ export class LoginPage implements OnInit  {
     .then(res => {console.log('estas en la funcion INTENTAR INICIAR SESION'  + res);
     this.route.navigateByUrl("/user");
   }, err => {
-    this.errorMessage = "Usted no se encuentra registrado. En caso que si, verifique su email o contraseña";
+    alert ("Usted no se encuentra registrado. En caso que si, verifique su email o contraseña");
       })  
   }
  

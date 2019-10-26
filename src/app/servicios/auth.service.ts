@@ -61,9 +61,11 @@ export class AuthService {
               if(codigo==token && codigo!=null){
                 console.log("Si es correcto");
                 this.route.navigateByUrl("/datospaciente");
+                alert ("se ha verificado exitosamente")
               }
               else{
                 console.log("caduco o incorrecto");
+                alert("No se logro ingresar, porfavor intentelo nuevamente")
                 this.errorMessage = "Codigo o rut invalido";
               }
           })

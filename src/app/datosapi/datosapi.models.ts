@@ -274,7 +274,7 @@ export class interconsulta{
              this.observaciones_medicas=datos.observaciones_medicas;
              this.fecha_atencion=datos.fecha_atencion;
              return
-         }
+         }          
             this.nombre_medico=this.nombre_medico;
             this.nombre_paciente=this.nombre_paciente;
             this.rut_paciente=this.rut_paciente;

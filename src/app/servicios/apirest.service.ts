@@ -27,26 +27,29 @@ export class ApirestService {
     }
 
     doVerfichamedica( ) : Observable <kine[]> {
-      return this.http.get<kine[]>("http://35.193.42.58:3000/datosmedicos")
+      return this.http.get<kine[]>("http://localhost:3000/datosmedicos")
       } 
 
     doAgregarFicha(datosmedicos: datosmedicos): Observable<datosmedicos[]>{
-      return this.http.post<datosmedicos []>("http://35.193.42.58:3000/datosmedicos", datosmedicos)
+      return this.http.post<datosmedicos []>("http://localhost:3000/datosmedicos", datosmedicos)
     }
    
     doEliminarinterconsulta(interconsulta:number):Observable<any>{
-      return this.http.delete<kine[]>("http://localhost:3000/interconsulta/" + interconsulta)
+      return this.http.delete<kine[]>("http://35.193.42.58:3000/interconsulta/" + interconsulta)
     }
     doEliminarfichamedica(datosmedicos:number) :Observable<any> {
       return this.http.delete<datosmedicos[]> ("http://localhost:3000/datosmedicos/" + datosmedicos)
     }
 
     doEliminarpsicologia(psicologia:number) :Observable<any> {
-      return this.http.delete<psicologia[]> ("http://localhost:3000/psicologia" + psicologia)
+      return this.http.delete<psicologia[]> ("http://35.193.42.58:3000/psicologia/" + psicologia)
     }
 
     doVerpsicologia(): Observable <psicologia[]> {
       return this.http.get<psicologia[]>("http://35.193.42.58:3000/psicologia")
+    }
+    doEditarficha(datosmedicos, id:string):Observable<any>{
+      return this.http.patch<any>("http://localhost:3000/datosmedicos/"+id,datosmedicos)
     }
 
 }

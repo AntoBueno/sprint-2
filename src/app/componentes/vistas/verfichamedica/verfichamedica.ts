@@ -4,7 +4,7 @@ import * as firebase from 'firebase/app';
 import { ApirestService } from '../../../servicios/apirest.service';
 import { AuthService } from "../../../servicios/auth.service";
 import { ActivatedRoute } from '@angular/router';
-import { codigo, kine, interconsulta } from '../../../datosapi/datosapi.models';
+import { codigo, kine, interconsulta, datosmedicos } from '../../../datosapi/datosapi.models';
 import { AngularFirestore} from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
@@ -27,6 +27,7 @@ public user: Object;
   public apellido:string
   public i : number;
   public  interconsulta = new Array();
+  public largo2: number
 
   constructor(
     public http: HttpClient,
@@ -42,6 +43,7 @@ public user: Object;
     this.apiServices.doVerfichamedica().subscribe((fichas)=>{
       this.fichas = fichas; 
       console.log(fichas);
+      
    },error=>{
    console.log("errorrrrrrr")   })
   
@@ -74,20 +76,32 @@ this.storage.get('name').then((val)=>{
        })
       })
       
+
    }
   
 
   goEliminarficha(id_fichas:number){
     this.apiServices.doEliminarfichamedica(id_fichas).subscribe(data=>{
-      alert("Ficha eliminada")
+      alert("Ficha eliminada exitosamente")
       console.log(id_fichas)  
       this.ngOnInit();
     },error=>{ 
-     console.log('errrooooooorrrr')  
+     console.log('errrooooooorrrr') 
+     alert("Porfavor volver a intentarlo") 
     })
   }
 
-  
+  goEditarficha(datosmedicos: datosmedicos){   
+    this.storage.set('datosmedicos',datosmedicos)
+    this.storage.get('datosmedicos').then((val) => {
+    });
+    this.route.navigateByUrl("/editarficha");  
+   
+}
+
+  goAgregar(){
+    this.route.navigateByUrl("/fichamedica");
+   }
 
   back(){
     this.route.navigateByUrl("/datospaciente");

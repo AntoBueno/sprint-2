@@ -8,11 +8,12 @@ const routes: Routes = [
   { path: 'login', loadChildren: './componentes/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './componentes/register/register.module#RegisterPageModule' },
   { path: 'user', loadChildren: './componentes/user/user.module#UserPageModule', canActivate : [WardGuard] },
-  { path: 'datospaciente', loadChildren: './componentes/datospaciente/datospaciente.module#DatospacientePageModule', canActivate : [WardGuard]},
-  { path: 'interconsulta', loadChildren: './componentes/interconsulta/interconsulta.module#InterconsultaPageModule', canActivate : [WardGuard]},
-  { path: 'verinterconsulta', loadChildren: './componentes/vistas/verinterconsulta/verinterconsulta.module#VerinterconsultaPageModule', canActivate : [WardGuard]},
-  { path: 'verfichamedica', loadChildren: './componentes/vistas/verfichamedica/verfichamedica.module#VerfichamedicaPageModule', canActivate : [WardGuard]},
-  { path: 'fichamedica', loadChildren: './componentes/fichamedica/fichamedica.module#FichamedicaPageModule', canActivate : [WardGuard]},
+  { path: 'datospaciente', loadChildren: './componentes/datospaciente/datospaciente.module#DatospacientePageModule'},
+  { path: 'interconsulta', loadChildren: './componentes/interconsulta/interconsulta.module#InterconsultaPageModule'},
+  { path: 'verinterconsulta', loadChildren: './componentes/vistas/verinterconsulta/verinterconsulta.module#VerinterconsultaPageModule'},
+  { path: 'verfichamedica', loadChildren: './componentes/vistas/verfichamedica/verfichamedica.module#VerfichamedicaPageModule'},
+  { path: 'fichamedica', loadChildren: './componentes/fichamedica/fichamedica.module#FichamedicaPageModule'},
+  {path : 'editarficha', loadChildren: './componentes/editar/editarficha/editarficha.module#EditarfichaPageModule'},
   { path: 'psicologia', loadChildren: './componentes/psicologia/psicologia.module#PsicologiaPageModule', canActivate : [WardGuard]},
   { path: 'verpsicologia', loadChildren: './componentes/vistas/verpsicologia/verpsicologia.module#VerpsicologiaPageModule', canActivate : [WardGuard]}
   
